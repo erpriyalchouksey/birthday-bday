@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santo ka Bday</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        body {
+            background-image: linear-gradient(to right top, #1f0537, #380c60, #55108c, #7413bb, #9612eb);
+            height: 100%;
+            margin: 0;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .card {
+            position: relative;
+            width: 300px;
+            height: 425px;
+            border: 10px solid #9612eb;
+            margin: 60px auto 0 auto;
+            box-shadow: inset 10px 0px 15px 0px rgba(0, 0, 0, 0.1);
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255), rgba(255, 255, 255, 0.5)), url("https://images.unsplash.com/photo-1527481138388-31827a7c94d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+
+            background-position: center;
+            /* Center the image */
+            background-repeat: no-repeat;
+            /* Do not repeat the image */
+            background-size: cover;
+            background-color: #e6f0e6;
+        }
+
+        .card .text-container {
+            width: 80%;
+            height: 80%;
+            margin: auto;
+        }
+
+        .strikethrough {
+            text-decoration: line-through;
+        }
+
+        .card .text-container #head {
+            font-family: 'Nobile', sans-serif;
+            font-size: 1.5em;
+            margin: 60px auto 60px auto;
+        }
+
+        .card p {
+            font-size: 1.1em;
+            line-height: 1.4;
+            font-family: 'Nobile';
+            color: #331717;
+            font-style: italic;
+            text-align: center;
+            margin: 30px auto 0px auto;
+        }
+
+        .card .front {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: -10px 0px 0px -10px;
+            border: 10px solid #9612eb;
+            backface-visibility: hidden;
+            background-color: #9612eb;
+            /* background-image: url($cover-image);
+	 */
+            background-size: contain;
+            transform-style: preserve-3d;
+            transform-origin: 0% 50%;
+            transform: perspective(800px) rotateY(0deg);
+            transition: all 0.8s ease-in-out;
+        }
+
+        .card:hover .front {
+            transform: perspective(800px) rotateY(-170deg);
+            background-color: #41718d;
+        }
+
+        .card:hover .back {
+            transform: perspective(800px) rotateY(-170deg);
+            box-shadow: 7px 0px 5px 0px rgba(0, 0, 0, 0.3), inset 2px 0px 15px 0px rgba(0, 0, 0, 0.1);
+            background-color: #d2dcd2;
+        }
+
+        .card .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 10px solid #9612eb;
+            margin: -10px 0px 0px -10px;
+            backface-visibility: visible;
+            filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, .5));
+            transform-style: preserve-3d;
+            transform-origin: 0% 50%;
+            transform: perspective(800px) rotateY(0deg);
+            transition: all 0.8s ease-in-out;
+            background-color: #e6f0e6;
+            box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        .imgset {
+            position: relative;
+            z-index: 1;
+            margin-bottom: -215px;
+        }
+
+        .imgset img {
+            box-shadow: 0px 6px 11px 7px rgba(0, 0, 0, 0.22);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <div class="card">
+            <div class="back"></div>
+            <div class="front">
+                <div class="imgset">
+                    <img width="100%"
+                        src="https://1.bp.blogspot.com/-Mgj9-rbs65E/XfMoPSD5gtI/AAAAAAAAURk/NBokE2gSS2cTSJ2em5lZ5hJDuTtRN7UVwCLcBGAsYHQ/s1600/2713997.png">
+                </div>
+            </div>
+            <div class="text-container">
+                <p id="head">Happy Birthday</p>
+                <p>I hope your special day will bring you lots of happiness, love, and fun. You deserve them a lot.
+                    Enjoy!</p>
+                <p>Hope your day goes great!</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="back"></div>
+            <div class="front">
+                <div class="imgset">
+                    <p style="color: white; font-family: italic; font-size: 22px; padding-bottom: 20px;">Happy Birthday</p>
+                    <img width="100%"
+                        src="https://lh3.googleusercontent.com/pw/AIL4fc_eNlDISI2PVVCX6SNEyipeX-SzoeNTq0YreX0EzglscKu9ATeQRb3b__kziwMwUYHZWaXT_7ewM17qYCt2u_7TL77iEoS5ks1nl3YjQanjbGBna92lzM_ydjfgvMdsMhK1uac4_i4gF9VDfANhFbB6yrK2DyAyKDuMP131yYaw3iOTOcno9vL1ojW7c9eZ0qeg1X9pcYHPKVf9S5A1gQndY4YvDSIp5xhyLWG39f0YqesqO2Oes1Vd4k7FtVXDKuBw_MTt9w5tASPG2_Vq-SVJJ9YIx_n0On-yrpkeDOYUJDJwzFOcClkOdEEMETp-ZvQ9uMZAKXnBV1An527dhedHSIqNrlGKJITBRIpiQwLOC9RN0bBDmVpyqsydG2BHo1EY250owWyAIe0imD2nGFrp7OCSGtRaNcTTBIY3AwlBC41G81QsZW-5SpcdxoFwZdIbVpScMVqesUS-B-vdA_xbtZxD4-2YiKHDVN2akuut89-1E76Dgmwcx7eYQNyjO0pHIhoTP2W5djziUJi-0LLc_RG9mpkqRpdn10BR9JFvUs9Qxh1pYpAPn4dGFjHK-j4ameXV9rjbC1-oF3y2OYztPZRoGgcVbP6Q6UMyWlpDEf0YyEPdaSMte5GJxo_OZC5LScM8NuG5-w5PTT2DVDFnAcXxsthAKzcSyMKvstbWknxCOpVw0Q5DecX3bc4YLnVm0v3pSWC3aF0hW2-YJFWxDfCvvFKGnYdheo8Vm_CUJqLjqx--qig2UxiEcVKLEldxyWs6HOUCJVl8SjhGL8mve-9kff2bhktzCHHJuerjObKmncDo5f1fyL_OrWB4UZOky_1vAJb4GV2Uf9INcR2F6PZmutPfftZI3g21hCqVHASblqaHsfy6Y_gnx3NtH6GDvONhwCZxBMAJNm2Hw2EGNQ=w480-h480-s-no?authuser=0">
+                </div>
+            </div>
+            <div class="text-container">
+                <p id="head">Happy Birthday</p>
+                <p>Life has its ups and downs, but with a friend like you by my side, I can endure it all. Happy birthday to my best friend!</p>
+                <p>Hope your day goes great!</p>
+            </div>
+        </div>
+        <div class="card" style="margin-bottom: 20px;">
+            <div class="back"></div>
+            <div class="front">
+                <div class="imgset">
+                    <img width="100%" height="100%"
+                        src="https://lh3.googleusercontent.com/pw/AIL4fc_n8RoEeN5e-TQJRUU8bZyQOm_sg-H-x12d2ELU82lRfuVdTDfO91P2qYK_cGPgb-6F1ts_5vKuUdgfG62OfXndjaranBhNmPnXINuAxRgeEnMkTdZgVQXl350YZvzuadiLhG-vvxdVOcUtryADWWTbMrDTC1LU67TU0PLLgwxAD9qUQwNYfKIbSNwwRvVCvJLI9DE0MrIGF-hFe0SqKRaurgz2LD-SxB8GcNEWcwFzBsjOUbNQduxo2Xb2buzTc1TVzjVxGur4YTxfq3nk5od99HlGe2nGjjuyUcXD76xztN7UFNBoxwXHG82U3E-SKQBV-fwfIGnySPYNYe3FGHhcpx6g_ZS53kvgNRHFoLKtcFrQQTeJQz9b9QQAvnzkZgAh3XCZKwuITOgIobz6sUhEVDRWta-s58Ll_zAUmQOCso4dep7qpnryr9A-ryJhkUpZYN-LGHYY0xxo_13Ap2R7oM4mT2N57v5VHX5EMwulNUKhRaT8AmkdcS5pLCcSOZignaICF2WTusRdznWse0ATpWtG5UuaDKeJAijKqU1w1g_0qULZOQKhyOeaR_IRsBtk2fdAZELsNcpltgtFsqqnRQGzszMfSqKcALVAQ2HRVTotmW0PjLRpcrWLR8TbPkgfVcuz1xL-9cHik1hojkOeZMAbC3OcJ0aYVoC1J9Mzs1Lsnv67G9VUilr7inh7oUaH-I7_XLs3WmmTADdxbATyKDNdeUH-7MrMw4wQLkyXLIkBPS8Q_nW1izUoMn1gYP4o5iWRKABMRGHm1ctOULYPVamHwd6VFALI4DotYMAYNbtQG-aL_65dW5al0SGH9wIZS-uXH7RRH_mjRmbPFGVbB9ViI5aZIWEoIisZ2MSsRVXcMJTWX788IwAsOG0sM2DfV9F_1BpJIdetYNhwT19lpw=w557-h743-s-no?authuser=0">
+                </div>
+            </div>
+            <div class="text-container">
+                <p id="head">Happy Birthday</p>
+                <p>Friends may come and go, but real ones never leave. Thank you for your unwavering friendship!</p>
+                <p>Hope your day goes great!</p>
+            </div>
+        </div>
+    </body>
+
+</html>
